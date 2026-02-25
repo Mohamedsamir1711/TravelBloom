@@ -10,7 +10,7 @@ document.querySelector('main').appendChild(resultsContainer);
 
 
 let travelData = {};
-fetch('travel_recommendation.json')
+fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
         travelData = data;
@@ -30,9 +30,9 @@ searchBtn.addEventListener('click', () => {
     let results = [];
 
     
-    if (keyword.includes('beach')) {
+    if (keyword.includes('beach') || keyword.includes('beaches')) {
         results = travelData.beaches || [];
-    } else if (keyword.includes('temple')) {
+    } else if (keyword.includes('temple') || keyword.includes('temples')) {
         results = travelData.temples || [];
     } else if (keyword.includes('country') || keyword.includes('countries')) {
         
@@ -69,3 +69,8 @@ clearBtn.addEventListener('click', () => {
    
     resultsContainer.innerHTML = '';
 });
+
+
+const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+const newYorkTime = new Date().toLocaleTimeString('en-US', options);
+console.log('Current time in New York:', newYorkTime);

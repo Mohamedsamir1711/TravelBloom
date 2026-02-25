@@ -8,7 +8,7 @@
 
         body {
             /* Placeholder Background Image (City Skyline) */
-            background: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background: url('bck.png') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             min-height: 100vh;
@@ -50,13 +50,11 @@
             color: #cccccc;
         }
 
-        /* Main Layout */
         .layout-container {
             display: flex;
             flex: 1;
         }
 
-        /* Left Sidebar (Socials) */
         .sidebar {
             width: 80px;
             display: flex;
@@ -85,7 +83,6 @@
             opacity: 1;
         }
 
-        /* Main Content Area */
         main {
             flex: 1;
             padding: 40px 60px 40px 20px;
@@ -101,7 +98,6 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        /* Intro Box */
         .intro-box {
             background: rgba(15, 25, 40, 0.6); /* Semi-transparent dark blue/grey */
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -120,7 +116,6 @@
             font-weight: 700;
         }
 
-        /* Team Section */
         .team-section {
             background: rgba(15, 25, 40, 0.6);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -148,7 +143,6 @@
             flex-wrap: wrap;
         }
 
-        /* Individual Card */
         .card {
             background: rgba(0, 0, 0, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.1);
